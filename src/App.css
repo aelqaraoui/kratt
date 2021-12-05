@@ -3,3 +3,18 @@
   margin-right: auto;
   text-align: center;
 }
+
+@font-face {
+  font-family: Pirou;
+  src: url(Pirou.otf);
+}
+
+body {
+  background-color: black;
+  font-family: Pirou;
+}
+
+main {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

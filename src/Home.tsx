@@ -4,6 +4,8 @@ import Countdown from "react-countdown";
 import { Button, CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
+import gif from "./g.gif";
+
 import * as anchor from "@project-serum/anchor";
 
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
@@ -18,6 +20,7 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
+import { Gif } from "@material-ui/icons";
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -199,6 +202,11 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
+
+      <p style={{fontSize: "5em", marginBottom: "0"}}>Weird World</p>
+      <p>KRATT X DISTORTED</p>
+      <img src={gif} style={{width: "25%"}}/>
+
       {wallet && (
         <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
